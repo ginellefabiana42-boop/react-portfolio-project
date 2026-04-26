@@ -1,0 +1,46 @@
+/* src/pages/Home.css */
+.home-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* The linear-gradient creates a dark overlay so text stays readable */
+  background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('../assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background-color: var(--text-main);
+  color: var(--bg-color);
+}
